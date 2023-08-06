@@ -16,17 +16,6 @@ The "Mealy_seq_101" module is designed to detect a specific input sequence and g
 
 1. `y`: Output signal indicating the detection of a specific sequence.
 
-## State Diagram
-
-The Mealy sequence detector 101 has three states: S0, S1, and S2. The state transitions are determined by the input signal `x`.
-
-```
-              _______ 1 _______       _______ 0 _______       _______ 0 _______
-     clk --> |                | --> |                | --> |                |
-  reset_n --> |     S0         |     |     S1         |     |     S2         |
-        x --> | (x = 0) (x = 1)|     | (x = 0) (x = 1)|     | (x = 0) (x = 1)|
-              |______ y ______|     |______ y ______|     |______ y ______|
-```
 
 ## State Descriptions
 
