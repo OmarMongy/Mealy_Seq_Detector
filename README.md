@@ -23,6 +23,10 @@ The "Mealy_seq_101" module is designed to detect a specific input sequence and g
 2. `s1`: After transitioning from `s0` to `s1`, this state will remain in place until the input `x` becomes '1', at which point it transitions to `s1`. If the input `x` becomes '0', it transitions to `s2`.
 3. `s2`: After transitioning from `s1` to `s2`, this state will remain in place until the input `x` becomes '1', at which point it transitions back to `s1`. If the input `x` becomes '0', it transitions back to `s0`.
 
+## Simulation
+
+There exists a single testbench code for evaluating this module, along with another module[Moore Sequence Detector](https://github.com/OmarMongy/Moore_Seq_Detector)
+
 ## Implementation Details
 
 The Mealy sequence detector is implemented using two always blocks:
